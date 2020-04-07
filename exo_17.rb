@@ -4,13 +4,14 @@ age = gets.chomp.to_i
 
 i = 0
 
-age.times do if i == age
-    puts "YES"
-    else
-        print "Il y a "
+age.times do 
+            print "Il y a "
         print i = i + 1
         print " ans, tu avais "
         print age = age - 1
         puts " années."
+
+        if i == age
+            puts "Il y a #{i}ans, tu avais la moitié de l'âge que tu as aujourd'hui"
     end
 end
